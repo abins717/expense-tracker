@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailoring custom premium design constants for our fintech visual language
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              slate: {
+                950: '#0b1329', // Ultra-deep premium dark canvas
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth global backdrop rendering to prevent unstyled layout flashes */
+      body {
+        background-color: #0b1329;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
